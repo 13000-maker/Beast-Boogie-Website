@@ -1809,9 +1809,10 @@ strong { font-weight: 600; }
   .hero-cta-mobile {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     margin-top: var(--space-md);
-    padding: 7px 14px;
+    padding: 6px 12px;
     background: var(--accent);
     color: var(--white);
     font-family: var(--font-body);
@@ -1823,11 +1824,32 @@ strong { font-weight: 600; }
     border: none;
     position: relative;
     overflow: hidden;
+    /* Match tagline width */
+    width: fit-content;
+    box-sizing: border-box;
     box-shadow:
-      0 4px 24px rgba(99, 103, 255, 0.35),
-      0 1px 3px rgba(0, 0, 0, 0.2),
+      0 0 12px rgba(99, 103, 255, 0.5),
+      0 0 28px rgba(99, 103, 255, 0.3),
+      0 0 48px rgba(99, 103, 255, 0.15),
       inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    animation: ctaGlow 2.5s ease-in-out infinite;
     transition: transform 0.35s var(--ease-spring), box-shadow 0.35s var(--ease-out);
+  }
+  @keyframes ctaGlow {
+    0%, 100% {
+      box-shadow:
+        0 0 12px rgba(99, 103, 255, 0.5),
+        0 0 28px rgba(99, 103, 255, 0.3),
+        0 0 48px rgba(99, 103, 255, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    }
+    50% {
+      box-shadow:
+        0 0 18px rgba(99, 103, 255, 0.7),
+        0 0 40px rgba(99, 103, 255, 0.4),
+        0 0 64px rgba(99, 103, 255, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
   }
   .hero-cta-mobile::before {
     content: '';
@@ -1840,16 +1862,19 @@ strong { font-weight: 600; }
   .hero-cta-mobile:focus-visible {
     transform: translateY(-2px);
     box-shadow:
-      0 8px 32px rgba(99, 103, 255, 0.45),
-      0 2px 6px rgba(0, 0, 0, 0.25),
-      inset 0 1px 0 rgba(255, 255, 255, 0.15);
+      0 0 20px rgba(99, 103, 255, 0.7),
+      0 0 48px rgba(99, 103, 255, 0.45),
+      0 0 72px rgba(99, 103, 255, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    animation: none;
     outline: none;
   }
   .hero-cta-mobile:active {
     transform: translateY(0) scale(0.97);
     box-shadow:
-      0 2px 12px rgba(99, 103, 255, 0.3),
-      0 1px 2px rgba(0, 0, 0, 0.2);
+      0 0 10px rgba(99, 103, 255, 0.5),
+      0 0 24px rgba(99, 103, 255, 0.25);
+    animation: none;
   }
   .hero-cta-arrow {
     transition: transform 0.35s var(--ease-spring);
