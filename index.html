@@ -78,11 +78,8 @@
     <!-- HERO -->
     <section class="hero" id="hero">
       <div class="hero-bg">
-        <video class="hero-bg-video" autoplay muted loop playsinline preload="auto" poster="https://placehold.co/1920x1080/0a0a12/0a0a12">
-          <source src="hero-bg.mov" type="video/mp4">
-          <source src="hero-bg.mov" type="video/quicktime">
-        </video>
-        <img src="https://placehold.co/1920x1080/0a0a12/0a0a12" alt="" class="hero-bg-fallback" aria-hidden="true">
+        <video class="hero-bg-video" muted loop playsinline preload="none" poster="images/beast-boogie-action.jpg"></video>
+        <img src="images/beast-boogie-action.jpg" alt="" class="hero-bg-fallback" aria-hidden="true">
         <div class="hero-gradient"></div>
       </div>
       <div class="hero-inner">
@@ -569,15 +566,35 @@
     var secs=document.querySelectorAll('section[id]'),sLinks=document.querySelectorAll('.sidebar-link');
     window.addEventListener('scroll',function(){var sp=window.scrollY+200;secs.forEach(function(s){if(s.offsetTop<=sp&&(s.offsetTop+s.offsetHeight)>sp){sLinks.forEach(function(l){l.classList.remove('active');if(l.getAttribute('href')==='#'+s.id)l.classList.add('active')})}})},{passive:true});
 
-    /* Hero video fallback for iOS/mobile */
+    /* Hero video – lazy-load after page render so hero appears instantly */
     (function(){
       var v=document.querySelector('.hero-bg-video');
       if(!v)return;
-      var p=v.play();
-      if(p!==undefined){p.catch(function(){v.parentElement.classList.add('video-failed')})}
-      v.addEventListener('error',function(){v.parentElement.classList.add('video-failed')});
-      /* Force play on first user interaction for stubborn browsers */
-      function tryPlay(){v.play().catch(function(){});document.removeEventListener('touchstart',tryPlay);document.removeEventListener('click',tryPlay)}
+
+      function loadVideo(){
+        /* Inject source only now – avoids 18 MB blocking download */
+        var s1=document.createElement('source');s1.src='hero-bg.mov';s1.type='video/mp4';
+        var s2=document.createElement('source');s2.src='hero-bg.mov';s2.type='video/quicktime';
+        v.appendChild(s1);v.appendChild(s2);
+        v.load();
+
+        v.addEventListener('canplay',function onReady(){
+          v.removeEventListener('canplay',onReady);
+          var p=v.play();
+          if(p!==undefined){
+            p.then(function(){v.classList.add('video-ready');v.parentElement.classList.add('video-playing')})
+             .catch(function(){v.parentElement.classList.add('video-failed')});
+          }else{v.classList.add('video-ready');v.parentElement.classList.add('video-playing')}
+        });
+        v.addEventListener('error',function(){v.parentElement.classList.add('video-failed')});
+      }
+
+      /* Start loading after the page is fully rendered */
+      if(document.readyState==='complete'){setTimeout(loadVideo,100)}
+      else{window.addEventListener('load',function(){setTimeout(loadVideo,100)})}
+
+      /* Force play on first interaction for stubborn mobile browsers */
+      function tryPlay(){v.play().then(function(){v.classList.add('video-ready');v.parentElement.classList.add('video-playing')}).catch(function(){});document.removeEventListener('touchstart',tryPlay);document.removeEventListener('click',tryPlay)}
       document.addEventListener('touchstart',tryPlay,{once:true,passive:true});
       document.addEventListener('click',tryPlay,{once:true});
     })();
