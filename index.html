@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Beast Boogie | B-Boy. Educator. Legend.</title>
+  <meta name="description" content="Anthony Silva aka Beast Boogie — Houston's most decorated B-Boy with 80+ battle wins, 28 years of experience, and a mission to bring breaking culture to every corner of the world.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== SIDEBAR NAVIGATION ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+      <a href="#" class="sidebar-logo">
+        <div class="sidebar-logo-mark">BB</div>
+        <div class="sidebar-logo-name">Beast Boogie</div>
+      </a>
+
+      <nav class="sidebar-nav">
+        <a href="#about" class="sidebar-link">About</a>
+        <a href="#achievements" class="sidebar-link">Legacy</a>
+        <a href="#schools" class="sidebar-link">Schools</a>
+        <a href="#programs" class="sidebar-link">Programs</a>
+        <a href="#dojo" class="sidebar-link">Learn Online</a>
+        <a href="#merch" class="sidebar-link">Shop</a>
+      </nav>
+
+      <a href="#contact" class="sidebar-cta">Book Now</a>
+
+      <div class="sidebar-social">
+        <a href="https://www.tiktok.com/@beastboogie" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.73a8.19 8.19 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.16z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/beastboogie/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.facebook.com/BeastBoogieEntertainment/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@beastboogie" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== MOBILE HEADER ===== -->
+  <header class="mobile-header" id="mobileHeader">
+    <a href="#" class="mobile-logo">
+      <span class="mobile-logo-mark">BB</span>
+      <span class="mobile-logo-text">Beast Boogie</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== MOBILE MENU OVERLAY ===== -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <nav class="mobile-nav">
+      <a href="#about" onclick="closeMenu()">About</a>
+      <a href="#achievements" onclick="closeMenu()">Legacy</a>
+      <a href="#schools" onclick="closeMenu()">Schools</a>
+      <a href="#programs" onclick="closeMenu()">Programs</a>
+      <a href="#dojo" onclick="closeMenu()">Learn Online</a>
+      <a href="#merch" onclick="closeMenu()">Shop</a>
+      <a href="#contact" onclick="closeMenu()" class="mobile-nav-cta">Book Now</a>
+    </nav>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-content" id="mainContent">
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <video class="hero-bg-video" autoplay muted loop playsinline preload="auto" poster="https://placehold.co/1920x1080/0a0a12/0a0a12">
+          <source src="hero-bg.mov" type="video/mp4">
+          <source src="hero-bg.mov" type="video/quicktime">
+        </video>
+        <img src="https://placehold.co/1920x1080/0a0a12/0a0a12" alt="" class="hero-bg-fallback" aria-hidden="true">
+        <div class="hero-gradient"></div>
+      </div>
+      <div class="hero-inner">
+        <div class="hero-quote">
+          <h1 class="hero-title">Beast<br><em>Boogie</em></h1>
+          <p class="hero-tagline">B-Boy. Educator. Legend.</p>
+          <p class="hero-sub">Teaching the world to break &mdash; one stage, one school, one student at a time.</p>
+        </div>
+        <div class="hero-scroll-indicator">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVIGATION STRIP -->
+    <section class="nav-strip">
+      <a href="#about" class="strip-card">
+        <div class="strip-img">
+          <img src="images/about-portrait.jpg" alt="About Beast Boogie">
+          <div class="strip-img-overlay"></div>
+        </div>
+        <span class="strip-label">About</span>
+      </a>
+      <a href="#achievements" class="strip-card">
+        <div class="strip-img">
+          <img src="images/legacy-action.jpg" alt="Legacy">
+          <div class="strip-img-overlay"></div>
+        </div>
+        <span class="strip-label">Legacy</span>
+      </a>
+      <a href="#schools" class="strip-card">
+        <div class="strip-img">
+          <img src="images/schools-teachers.jpg" alt="Schools">
+          <div class="strip-img-overlay"></div>
+        </div>
+        <span class="strip-label">Schools</span>
+      </a>
+      <a href="#dojo" class="strip-card">
+        <div class="strip-img">
+          <img src="images/learn-online.jpg" alt="B-Boy Dojo">
+          <div class="strip-img-overlay"></div>
+        </div>
+        <span class="strip-label">Learn Online</span>
+      </a>
+    </section>
+
+    <!-- ABOUT — LIGHT SECTION -->
+    <section id="about" class="section section--light">
+      <div class="section-container">
+        <div class="about-layout">
+          <div class="about-intro reveal">
+            <div class="accent-line"></div>
+            <h2 class="section-title">Houston's Baddest<br><em>B-Boy</em></h2>
+          </div>
+          <div class="about-image reveal">
+            <div class="about-portrait">
+              <img src="images/trophy-bboycity.jpg.JPG" alt="Anthony Silva — Beast Boogie — B-Boy City Champion">
+            </div>
+            <div class="about-crews">
+              <span class="crew-tag">Vicious Germz '01</span>
+              <span class="crew-tag">Havikoro '13</span>
+              <span class="crew-tag">AntiGravity '09&ndash;'15</span>
+            </div>
+          </div>
+          <div class="about-details reveal">
+            <p class="lead-text">28 years in the game. 80+ battles won. Millions taught. The movement never stops.</p>
+            <p class="body-text">Anthony Silva picked up breaking in Houston and never looked back. He joined the legendary <strong>Vicious Germz</strong> crew in 2001 and later became a member of elite squad <strong>Havikoro</strong> in 2013 &mdash; two of the most respected breaking crews in the world.</p>
+            <p class="body-text">From 2009 to 2015, he performed as an acro-dancer with <strong>AntiGravity</strong>, the official dunk team for the Houston Rockets &mdash; including a stint as mascot Clutch the Bear. He's graced stages at Art Basel, NBA All-Star Games, Red Bull BC One, and the world's biggest breakdance event, IBE in Europe.</p>
+            <blockquote class="pull-quote">
+              <p>&ldquo;Dance taught me discipline, confidence, and how to express myself. I want every single person to feel that too &mdash; regardless of age or ability.&rdquo;</p>
+            </blockquote>
+            <a href="#contact" class="text-link">Learn more about Beast Boogie</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS — DARK -->
+    <section id="achievements" class="section section--dark">
+      <div class="section-container">
+        <div class="centered-intro reveal">
+          <h2 class="section-title section-title--centered">A Career Built on <em>Wins</em></h2>
+          <p class="centered-subtitle">From Houston gyms to global stages &mdash; Beast Boogie has competed, performed, and taught everywhere.</p>
+        </div>
+
+        <div class="stats-grid reveal">
+          <div class="stat-block">
+            <div class="stat-num">80+</div>
+            <div class="stat-label">Breakdance Competitions Won Globally</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-num">100K+</div>
+            <div class="stat-label">Students Taught In Person</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-num">Millions</div>
+            <div class="stat-label">Reached Through Online Content</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-num">2001</div>
+            <div class="stat-label">Year He Joined His First Crew</div>
+          </div>
+        </div>
+
+        <div class="split-layout split-layout--even">
+          <div class="reveal">
+            <h3 class="subsection-title">Battle Wins</h3>
+            <ul class="wins-list">
+              <li>Red Bull BC One &mdash; Texas</li>
+              <li>B-Boy City</li>
+              <li>Freestyle Session Texas</li>
+              <li>Raw Texas Warz 6</li>
+              <li>H-Town Get Down</li>
+              <li>King of Hearts</li>
+              <li>Battle on the Plainz</li>
+              <li>The Show by JabbaWockeeZ</li>
+            </ul>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <h3 class="subsection-title">Performance Stages</h3>
+            <div class="venues-grid">
+              <div class="venue-item">
+                <div class="venue-name">NBA All-Star</div>
+                <div class="venue-detail">Multiple appearances</div>
+              </div>
+              <div class="venue-item">
+                <div class="venue-name">Art Basel</div>
+                <div class="venue-detail">Miami</div>
+              </div>
+              <div class="venue-item">
+                <div class="venue-name">Houston Rockets</div>
+                <div class="venue-detail">AntiGravity 2009&ndash;2015</div>
+              </div>
+              <div class="venue-item">
+                <div class="venue-name">Red Bull BC One</div>
+                <div class="venue-detail">World's top 1v1 battle</div>
+              </div>
+              <div class="venue-item">
+                <div class="venue-name">Bumbershoot</div>
+                <div class="venue-detail">Seattle music festival</div>
+              </div>
+              <div class="venue-item">
+                <div class="venue-name">IBE Europe</div>
+                <div class="venue-detail">World's biggest breakdance event</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHOOLS — LIGHT -->
+    <section id="schools" class="section section--light">
+      <div class="section-container">
+        <div class="schools-layout">
+          <div class="schools-intro reveal">
+            <div class="accent-line"></div>
+            <h2 class="section-title">The Assembly That Gets<br><em>Standing Ovations</em></h2>
+            <p class="lead-text">Skip the boring assembly. Book the creator your students actually watch.</p>
+          </div>
+          <div class="schools-image reveal">
+            <div class="school-image-block">
+              <img src="images/Beast Boogie - School Image.PNG" alt="Beast Boogie school assembly">
+              <div class="school-quote-overlay">
+                <blockquote>&ldquo;The kids are STILL talking about it weeks later. Best assembly we've ever had.&rdquo;</blockquote>
+                <cite>&mdash; Principal Johnson, Lincoln Elementary</cite>
+              </div>
+            </div>
+          </div>
+          <div class="schools-details reveal">
+            <p class="body-text">Beast Boogie brings TikTok energy to your gymnasium. Students don't just watch &mdash; they participate, move, and leave buzzing. Perfect for spirit weeks, wellness initiatives, anti-bullying programs, or end-of-year celebrations.</p>
+            <p class="body-text">With 100,000+ students taught in person across hundreds of schools globally, Beast Boogie knows exactly how to connect with kids of every age and background.</p>
+
+            <div class="benefits-grid">
+              <div class="benefit-item">
+                <h4 class="benefit-title">Instant Engagement</h4>
+                <p class="benefit-desc">Students already know Beast Boogie from TikTok &mdash; attention is automatic</p>
+              </div>
+              <div class="benefit-item">
+                <h4 class="benefit-title">Wellness Aligned</h4>
+                <p class="benefit-desc">Meets physical activity and social-emotional learning goals</p>
+              </div>
+              <div class="benefit-item">
+                <h4 class="benefit-title">Turnkey Program</h4>
+                <p class="benefit-desc">We bring everything &mdash; you just provide the space</p>
+              </div>
+              <div class="benefit-item">
+                <h4 class="benefit-title">Shareable Moments</h4>
+                <p class="benefit-desc">Content your school socials will love</p>
+              </div>
+            </div>
+
+            <div class="pills-row">
+              <span class="pill">K&ndash;12 Programs</span>
+              <span class="pill">All Ages</span>
+              <span class="pill">Same-Week Booking</span>
+              <span class="pill">100% Satisfaction</span>
+            </div>
+
+            <div class="cta-row">
+              <a href="#contact" class="btn btn--primary">Request School Pricing</a>
+              <span class="cta-note">Usually responds within 24 hours</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CINEMATIC BREAK — DARK -->
+    <section class="section section--cinematic">
+      <div class="section-container">
+        <div class="cinematic-block reveal">
+          <p class="cinematic-intro">Multidisciplinary performer.<br>Passionate educator.<br>Thrilling athleticism.</p>
+          <blockquote class="cinematic-quote">
+            <p>&ldquo;Beast Boogie is the real deal &mdash; 80+ wins, millions of followers, and he still shows up to teach kids for free.&rdquo;</p>
+          </blockquote>
+          <a href="#about" class="text-link text-link--light">Step inside</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS — LIGHT -->
+    <section id="programs" class="section section--light">
+      <div class="section-container">
+        <div class="centered-intro reveal">
+          <div class="accent-line accent-line--centered"></div>
+          <h2 class="section-title section-title--centered">Learn the Moves You See <em>Online</em></h2>
+          <p class="centered-subtitle">Camps, workshops, and private events &mdash; directly with Beast Boogie. Limited spots. Real skills. Unforgettable energy.</p>
+        </div>
+
+        <div class="programs-grid">
+          <div class="program-card reveal">
+            <div class="program-header">
+              <h3 class="program-name">Weekend Workshop</h3>
+              <div class="program-meta">Ages 6&ndash;16 &middot; 2 Days &middot; Beginner Friendly</div>
+            </div>
+            <p class="program-desc">Perfect first step. Two days of movement, music, and confidence-building. No experience needed &mdash; just bring energy.</p>
+            <ul class="program-features">
+              <li>Learn Top Rock, 6-Step &amp; Freezes</li>
+              <li>3 TikTok-ready combos</li>
+              <li>Certificate + photo memories</li>
+            </ul>
+            <div class="program-footer">
+              <div class="program-price"><span class="price-label">Starting at</span><span class="price-amount">$149</span></div>
+              <a href="#contact" class="btn btn--outline">Learn More</a>
+            </div>
+          </div>
+
+          <div class="program-card program-card--featured reveal reveal-delay-1">
+            <div class="program-badge">Most Popular</div>
+            <div class="program-header">
+              <h3 class="program-name">Summer Intensive</h3>
+              <div class="program-meta">Ages 8&ndash;14 &middot; 1 Week &middot; All Levels</div>
+            </div>
+            <p class="program-desc">The full Beast Boogie experience. Daily training, choreography creation, and a final showcase for family and friends.</p>
+            <ul class="program-features">
+              <li>5 days of immersive training</li>
+              <li>Create your own B-Boy/B-Girl routine</li>
+              <li>Final performance showcase</li>
+              <li>Beast Boogie merch included</li>
+            </ul>
+            <div class="program-footer">
+              <div class="program-price"><span class="price-label">Starting at</span><span class="price-amount">$399</span></div>
+              <a href="#contact" class="btn btn--primary">Reserve Spot</a>
+            </div>
+          </div>
+
+          <div class="program-card reveal reveal-delay-2">
+            <div class="program-header">
+              <h3 class="program-name">Birthday Parties</h3>
+              <div class="program-meta">All Ages &middot; 1&ndash;2 Hours &middot; Beginner Friendly</div>
+            </div>
+            <p class="program-desc">Make their birthday legendary. Beast Boogie brings the music, moves, and energy &mdash; you bring the cake.</p>
+            <ul class="program-features">
+              <li>Up to 20 kids</li>
+              <li>Custom playlist</li>
+              <li>Photo/video content for socials</li>
+            </ul>
+            <div class="program-footer">
+              <div class="program-price"><span class="price-label">Starting at</span><span class="price-amount">$500</span></div>
+              <a href="#contact" class="btn btn--outline">Inquire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- B-BOY DOJO — DARK -->
+    <section id="dojo" class="section section--dark">
+      <div class="section-container">
+        <div class="split-layout">
+          <div class="split-text reveal">
+            <div class="accent-line accent-line--ondark"></div>
+            <h2 class="section-title">The World's Biggest<br><em>Breakdance School</em></h2>
+            <p class="lead-text lead-text--ondark">&ldquo;Anyone, anywhere should be able to learn to break on their own terms.&rdquo;</p>
+            <p class="body-text body-text--ondark">Founded in 2015, B-Boy &amp; B-Girl Dojo is Beast Boogie's online education platform &mdash; the world's biggest breakdance learning resource. The mission: help people worldwide discover breaking culture, cultivate stronger selves, and build stronger communities.</p>
+            <p class="body-text body-text--ondark">Structured with progressive modules &mdash; from foundational movements to advanced power moves &mdash; every course is designed to build you up step by step, just like real dojo training.</p>
+
+            <div class="dojo-stats">
+              <div class="dojo-stat"><div class="dojo-stat-num">2015</div><div class="dojo-stat-label">Year Dojo was founded</div></div>
+              <div class="dojo-stat"><div class="dojo-stat-num">50+</div><div class="dojo-stat-label">HD tutorial lessons</div></div>
+              <div class="dojo-stat"><div class="dojo-stat-num">1M+</div><div class="dojo-stat-label">Reached online</div></div>
+              <div class="dojo-stat"><div class="dojo-stat-num">100%</div><div class="dojo-stat-label">Free to start</div></div>
+            </div>
+
+            <a href="https://bboydojo.com" target="_blank" rel="noopener noreferrer" class="text-link text-link--light">
+              Visit B-Boy Dojo
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+          <div class="split-media reveal reveal-delay-1">
+            <div class="dojo-cards">
+              <div class="dojo-card dojo-card--featured">
+                <div class="dojo-badge dojo-badge--free">Free</div>
+                <div class="dojo-card-type">Beginner Course</div>
+                <h3 class="dojo-card-title">Fundamental Flows: How to Breakdance</h3>
+                <p class="dojo-card-desc">Beast Boogie's signature beginner course &mdash; completely free. Covers warm-ups, foundational movement, rolls, cartwheels, rhythm basics, and freezes.</p>
+                <div class="dojo-card-price">$0 <span>&mdash; Lifetime Access</span></div>
+                <a href="https://learn.bboydojo.com/beast-boogie-how-to-breakdance/fundamental-flows-beast-boogie/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--full">Start Learning Free</a>
+              </div>
+              <div class="dojo-card">
+                <div class="dojo-badge dojo-badge--best">Bestseller</div>
+                <div class="dojo-card-type">Full Course</div>
+                <h3 class="dojo-card-title">B-Boy Foundations</h3>
+                <p class="dojo-card-desc">20+ HD lessons. Footwork, power moves, and signature combos. Lifetime access.</p>
+                <div class="dojo-card-price">$49</div>
+                <a href="https://bboydojo.com" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--full btn--outline-ondark">Get Access</a>
+              </div>
+              <div class="dojo-card">
+                <div class="dojo-badge dojo-badge--community">Community</div>
+                <div class="dojo-card-type">Membership</div>
+                <h3 class="dojo-card-title">Dojo Inner Circle</h3>
+                <p class="dojo-card-desc">Monthly exclusive content, camp early access, merch discounts, and direct Q&amp;A sessions.</p>
+                <div class="dojo-card-price">$9.99 <span>/mo</span></div>
+                <a href="https://bboydojo.com" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--full btn--outline-ondark">Join Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MERCH — LIGHT -->
+    <section id="merch" class="section section--light">
+      <div class="section-container">
+        <div class="split-layout">
+          <div class="split-text split-text--narrow reveal">
+            <div class="accent-line"></div>
+            <h2 class="section-title">Rep the<br><em>Movement</em></h2>
+            <p class="body-text">Premium streetwear for B-Boys, B-Girls, and anyone who moves. All-black tees with bold designs celebrating breaking culture, hip-hop, and the Beast Boogie lifestyle.</p>
+            <div class="merch-tags">
+              <span class="merch-tag">Top Rock</span>
+              <span class="merch-tag">Drops</span>
+              <span class="merch-tag">Footwork</span>
+              <span class="merch-tag">Freezes</span>
+              <span class="merch-tag">Powermoves</span>
+              <span class="merch-tag">Hip-Hop</span>
+            </div>
+            <a href="https://mysteryhype.com/beastboogie" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+              Shop the Collection
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+          <div class="products-grid reveal reveal-delay-1">
+            <div class="product-card"><div class="product-swatch" style="--swatch-color:#39FF14"></div><div class="product-body"><div class="product-name">Signature Action Tee</div><div class="product-detail">Neon green explosion</div><div class="product-price">$32</div></div></div>
+            <div class="product-card"><div class="product-swatch" style="--swatch-color:#6367FF"></div><div class="product-body"><div class="product-name">Sports Culture Tee</div><div class="product-detail">Football meets Breakin</div><div class="product-price">$32</div></div></div>
+            <div class="product-card"><div class="product-swatch" style="--swatch-color:#FF6B35"></div><div class="product-body"><div class="product-name">B-Boy Lifestyle Tee</div><div class="product-detail">Chrome swoosh design</div><div class="product-price">$32</div></div></div>
+            <div class="product-card"><div class="product-swatch" style="--swatch-color:#38BDF8"></div><div class="product-body"><div class="product-name">5 Fundamentals Tee</div><div class="product-detail">Top Rock to Powermoves</div><div class="product-price">$32</div></div></div>
+            <div class="product-card"><div class="product-swatch" style="--swatch-color:#00D4AA"></div><div class="product-body"><div class="product-name">B-Girl Lifestyle Tee</div><div class="product-detail">Teal edition</div><div class="product-price">$32</div></div></div>
+            <div class="product-card"><div class="product-swatch" style="--swatch-color:#1A6FFF"></div><div class="product-body"><div class="product-name">Hip-Hop Elements Tee</div><div class="product-detail">DJ &middot; Emcee &middot; Breakin &middot; Graf</div><div class="product-price">$32</div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDS BAR -->
+    <div class="brands-bar">
+      <p class="brands-label">Trusted by world-class brands</p>
+      <div class="brands-row">
+        <span>Monster Energy</span>
+        <span>Jarritos</span>
+        <span>DraftKings</span>
+        <span>Houston Rockets</span>
+        <span>Red Bull BC One</span>
+      </div>
+    </div>
+
+    <!-- SOCIAL + TESTIMONIALS — DARK -->
+    <section class="section section--dark">
+      <div class="section-container">
+        <div class="centered-intro reveal">
+          <h2 class="section-title section-title--centered">1.7M+ Across All <em>Platforms</em></h2>
+          <p class="centered-subtitle">Join millions already following Beast Boogie for daily tutorials, B-Boy culture, and behind-the-scenes content.</p>
+        </div>
+        <div class="social-grid reveal">
+          <a class="social-card" href="https://www.tiktok.com/@beastboogie" target="_blank" rel="noopener noreferrer"><div class="social-platform">TikTok</div><div class="social-count">1.1M</div><div class="social-unit">followers</div><div class="social-handle">@beastboogie</div></a>
+          <a class="social-card" href="https://www.facebook.com/BeastBoogieEntertainment/" target="_blank" rel="noopener noreferrer"><div class="social-platform">Facebook</div><div class="social-count">550K</div><div class="social-unit">followers</div><div class="social-handle">Beast Boogie Ent.</div></a>
+          <a class="social-card" href="https://www.instagram.com/beastboogie/" target="_blank" rel="noopener noreferrer"><div class="social-platform">Instagram</div><div class="social-count">118K</div><div class="social-unit">followers</div><div class="social-handle">@beastboogie</div></a>
+          <a class="social-card" href="https://www.youtube.com/@beastboogie" target="_blank" rel="noopener noreferrer"><div class="social-platform">YouTube</div><div class="social-count">35K</div><div class="social-unit">subscribers</div><div class="social-handle">Beast Boogie</div></a>
+        </div>
+
+        <div class="testimonials-section reveal">
+          <h3 class="subsection-title subsection-title--centered">Parents &amp; Schools <em>Love It</em></h3>
+          <div class="testimonials-grid">
+            <div class="testi-card">
+              <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testi-text">&ldquo;My daughter was shy and never wanted to try new things. After one camp with Beast Boogie, she's performing for the whole family. Absolute life-changer.&rdquo;</p>
+              <div class="testi-author"><div class="testi-avatar">S</div><div><div class="testi-name">Sarah M.</div><div class="testi-role">Camp Parent</div></div></div>
+            </div>
+            <div class="testi-card">
+              <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testi-text">&ldquo;We've tried every assembly vendor. Beast Boogie is the only one where students asked 'when is he coming back?' Booking him again next year.&rdquo;</p>
+              <div class="testi-author"><div class="testi-avatar">D</div><div><div class="testi-name">Dr. Johnson</div><div class="testi-role">Principal, Lincoln Elementary</div></div></div>
+            </div>
+            <div class="testi-card">
+              <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testi-text">&ldquo;I followed Beast Boogie on TikTok for months. The online course is even better &mdash; I can pause, rewind, and actually nail the moves step by step.&rdquo;</p>
+              <div class="testi-author"><div class="testi-avatar">M</div><div><div class="testi-name">Marcus T.</div><div class="testi-role">Online Student, Age 14</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / CTA -->
+    <section id="contact" class="section section--cta">
+      <div class="section-container">
+        <div class="cta-block reveal">
+          <h2 class="cta-title">Let's Make It <em>Happen</em></h2>
+          <p class="cta-desc">School administrator, event organizer, brand partner, or just want to learn &mdash; whatever you need, Beast Boogie is ready. Let's talk.</p>
+          <div class="cta-actions">
+            <a href="mailto:hello@beastboogie.com" class="btn btn--primary">
+              Email Directly
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+            <a href="https://bboydojo.com" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--outline-ondark">Start Learning Free</a>
+            <a href="https://www.instagram.com/beastboogie/" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--outline-ondark">Follow on Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="section-container">
+        <div class="footer-top">
+          <div class="footer-contact-block">
+            <div class="footer-contact-label">Book Beast Boogie</div>
+            <a href="mailto:hello@beastboogie.com" class="footer-email">hello@beastboogie.com</a>
+            <div class="footer-response">Response within 24 hours</div>
+          </div>
+          <div class="footer-social-icons">
+            <a href="https://www.tiktok.com/@beastboogie" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.73a8.19 8.19 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.16z"/></svg></a>
+            <a href="https://www.instagram.com/beastboogie/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://www.facebook.com/BeastBoogieEntertainment/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="https://www.youtube.com/@beastboogie" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-links-grid">
+          <div class="footer-col"><h4 class="footer-col-title">Programs</h4><a href="#schools">School Assemblies</a><a href="#programs">Public Camps</a><a href="#programs">Birthday Parties</a><a href="#dojo">Online Courses</a></div>
+          <div class="footer-col"><h4 class="footer-col-title">Company</h4><a href="#about">About Anthony</a><a href="#achievements">Achievements</a><a href="https://bboydojo.com" target="_blank" rel="noopener noreferrer">B-Boy Dojo</a><a href="https://mysteryhype.com/beastboogie" target="_blank" rel="noopener noreferrer">Shop Merch</a></div>
+          <div class="footer-col"><h4 class="footer-col-title">Booking</h4><a href="#contact">Book Beast Boogie</a><a href="#schools">School Pricing</a><a href="#programs">Camp Schedule</a></div>
+          <div class="footer-col"><h4 class="footer-col-title">Quick Links</h4><a href="https://bboydojo.com" target="_blank" rel="noopener noreferrer">B-Boy Dojo</a><a href="https://mysteryhype.com/beastboogie" target="_blank" rel="noopener noreferrer">Merch Store</a><a href="#hero">Back to Top</a></div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Beast Boogie / Anthony Silva. All rights reserved.</p>
+          <p>Merch powered by <a href="https://mysteryhype.com" target="_blank" rel="noopener noreferrer">Mystery Hype</a></p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    function toggleMenu(){var o=document.getElementById('mobileOverlay'),h=document.getElementById('hamburger'),isOpen=o.classList.toggle('open');h.classList.toggle('open',isOpen);document.body.style.overflow=isOpen?'hidden':''}
+    function closeMenu(){document.getElementById('mobileOverlay').classList.remove('open');document.getElementById('hamburger').classList.remove('open');document.body.style.overflow=''}
+    window.addEventListener('resize',function(){if(window.innerWidth>1024)closeMenu()});
+    var revEls=document.querySelectorAll('.reveal');
+    var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.1,rootMargin:'0px 0px -60px 0px'});
+    revEls.forEach(function(el){obs.observe(el)});
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var t=document.querySelector(this.getAttribute('href'));if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset,behavior:'smooth'})}})});
+    var secs=document.querySelectorAll('section[id]'),sLinks=document.querySelectorAll('.sidebar-link');
+    window.addEventListener('scroll',function(){var sp=window.scrollY+200;secs.forEach(function(s){if(s.offsetTop<=sp&&(s.offsetTop+s.offsetHeight)>sp){sLinks.forEach(function(l){l.classList.remove('active');if(l.getAttribute('href')==='#'+s.id)l.classList.add('active')})}})},{passive:true});
+
+    /* Hero video fallback for iOS/mobile */
+    (function(){
+      var v=document.querySelector('.hero-bg-video');
+      if(!v)return;
+      var p=v.play();
+      if(p!==undefined){p.catch(function(){v.parentElement.classList.add('video-failed')})}
+      v.addEventListener('error',function(){v.parentElement.classList.add('video-failed')});
+      /* Force play on first user interaction for stubborn browsers */
+      function tryPlay(){v.play().catch(function(){});document.removeEventListener('touchstart',tryPlay);document.removeEventListener('click',tryPlay)}
+      document.addEventListener('touchstart',tryPlay,{once:true,passive:true});
+      document.addEventListener('click',tryPlay,{once:true});
+    })();
+  </script>
+</body>
+</html>
