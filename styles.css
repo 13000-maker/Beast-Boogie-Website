@@ -1809,15 +1809,15 @@ strong { font-weight: 600; }
   .hero-cta-mobile {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     margin-top: var(--space-md);
-    padding: 14px 32px;
+    padding: 7px 14px;
     background: var(--accent);
     color: var(--white);
     font-family: var(--font-body);
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 600;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     text-decoration: none;
     border: none;
