@@ -572,10 +572,9 @@
       if(!v)return;
 
       function loadVideo(){
-        /* Inject source only now – avoids 18 MB blocking download */
-        var s1=document.createElement('source');s1.src='hero-bg.mov';s1.type='video/mp4';
-        var s2=document.createElement('source');s2.src='hero-bg.mov';s2.type='video/quicktime';
-        v.appendChild(s1);v.appendChild(s2);
+        /* Inject source only now – avoids blocking download */
+        var s1=document.createElement('source');s1.src='hero-bg.mp4';s1.type='video/mp4';
+        v.appendChild(s1);
         v.load();
 
         v.addEventListener('canplay',function onReady(){
